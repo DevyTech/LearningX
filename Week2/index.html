@@ -8,6 +8,17 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1 class="judul">Hello World</h1>
+    <div class="container">
+        <h1 class="judul">Hello World</h1>
+        <button>Hit me!</button>
+    </div>
 </body>
+
+<script>
+    document.querySelector('button').addEventListener('click', function(){
+        document.querySelector('.container').classList.toggle('change')
+        document.querySelector('.judul').classList.toggle('change')
+        document.querySelector('button').classList.toggle('change')
+    })
+</script>
 </html>
