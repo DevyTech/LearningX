@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css?family=Dosis');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Dosis';
+    height: 100vh;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+
+    background-color: #130f40;
+    position: relative;
+}
+.container .judul{
+    color: #f5f5f5;
+    padding: 10px;
+    border-radius: 5px;
+    transition: all 0.5s;
+}
+.container .judul:hover{
+    color: #4834d4;
+    background-color: #f5f5f5;
+}
+.container button{
+    padding: 10px 20px;
+    font-size: 24px;
+    background-color: transparent;
+    border: 1px solid #f5f5f5;
+    border-color: #f5f5f5;
+    border-radius: 10px;
+    color: #f5f5f5;
+    transition: all 0.2s;
+}
+.container button:hover{
+    cursor: pointer;
+    transform: scale(1.2);
+}
+/* btn click */
+.container.change{
+    background-color: #f5f5f5;
+}
+.container .judul.change{
+    color: #4834d4;
+}
+.container .judul.change:hover{
+    color: #f5f5f5;
+    background-color: #4834d4;
+}
+.container button.change{
+    color: #4834d4;
+    border-color: #4834d4;
+}
